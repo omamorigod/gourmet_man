@@ -1,0 +1,24 @@
+
+/* まんがの画像 */
+#newimagecontent{
+    text-align:center;
+}
+
+.gotopbutton{
+    border-radius: 5px;
+    display: block;
+    width: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #212420;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.buttonwrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
+}

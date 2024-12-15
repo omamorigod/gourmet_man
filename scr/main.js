@@ -1,6 +1,6 @@
 const num = 30;
 
-function CreateGourmet_man(count){
+function createGourmet_man(count){
     const imagecontents = document.getElementById('imagecontents');
     for(i=1;i<=count;i++){
     let img_element = document.createElement('img');
@@ -10,7 +10,7 @@ function CreateGourmet_man(count){
     };
 };
 
-function CreateBorder(){
+function createBorder(){
     let imagecontent = document.getElementsByClassName('imagecontents');
     for(imageNum=0;imageNum<imagecontent.length;imageNum++){
         let border = document.createElement('p');

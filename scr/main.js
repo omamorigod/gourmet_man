@@ -28,5 +28,3 @@ const getImageContents = async () => {
 
 getImageContents().then(createBorder());
 
-createGourmet_man(num);
-

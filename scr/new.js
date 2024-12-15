@@ -4,7 +4,6 @@ function CreateOneGourmet_man(count){
     let img_element = document.createElement('img');
     img_element.src = `image/${count}.jpg`; 
     imagecontents.appendChild(img_element);
-    };
 };
 
 

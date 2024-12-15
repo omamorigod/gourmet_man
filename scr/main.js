@@ -3,46 +3,30 @@ const num = 30;
 
 function createGourmet_man( count ){
     const imagecontents = document.getElementById('imagecontents');
-    for(imageNum=0;imageNum<=count;imageNum++){
+    for(i=1;i<=count;i++){
     let img_element = document.createElement('img');
-    img_element.src = `image/${imageNum+1}.jpg`; 
+    img_element.src = `image/${i}.jpg`; 
     img_element.className  = ('imagecontents');
-    let border = document.createElement('p');
-    border.className  = ('border');
     imagecontents.appendChild(img_element);
-    img_element.after(border);
-    // createBorder(imageNum)
     };
 };
 
-// function createBorder(){
-//     let imagecontent = document.getElementsByClassName('imagecontents');
-//     for(imageNum=0;imageNum<imagecontent.length;imageNum++){
-//         let border = document.createElement('p');
-//         border.className  = ('border');
-//         imagecontent[imageNum].after(border);
-//     };
-// };
-
-
-function createBorder(imageNum){
+function createBorder(){
     let imagecontent = document.getElementsByClassName('imagecontents');
-    // for(imageNum=0;imageNum<imagecontent.length;imageNum++){
+    for(imageNum=0;imageNum<imagecontent.length;imageNum++){
         let border = document.createElement('p');
         border.className  = ('border');
         imagecontent[imageNum].after(border);
-    // };
+    };
 };
 
 
+const getImageContents = async () => {
+    let result = await createGourmet_man(num);
+    return result;
+}
 
-// const getImageContents = async () => {
-//     createGourmet_man(num);
-//     return true;
-// }
-
-// getImageContents().then(createBorder());
+getImageContents().then(createBorder());
 
 createGourmet_man(num);
-
 

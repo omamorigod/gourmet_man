@@ -1,4 +1,3 @@
-
 const num = 30;
 
 function createGourmet_man( count ){
@@ -14,9 +13,9 @@ function createGourmet_man( count ){
 function createBorder(){
     let imagecontent = document.getElementsByClassName('imagecontents');
     for(imageNum=0;imageNum<imagecontent.length;imageNum++){
-        let border = document.createElement('p');
-        border.className  = ('border');
-        imagecontent[imageNum].after(border);
+        let borderType = document.createElement('p');
+        borderType.style.border = "1px solid red";
+        imagecontent[imageNum].after(borderType);
     };
 };
 
@@ -27,4 +26,3 @@ const getImageContents = async () => {
 }
 
 getImageContents().then(createBorder());
-

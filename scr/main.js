@@ -1,3 +1,4 @@
+const num = 30;
 
 function CreateGourmet_man(count){
     const imagecontents = document.getElementById('imagecontents');
@@ -19,7 +20,11 @@ function CreateBorder(){
 };
 
 
-CreateGourmet_man(30);
-CreateBorder();
+const getImageContents = async () => {
+    createGourmet_man(num);
+    return true;
+}
+
+getImageContents().then(createBorder());
 
 

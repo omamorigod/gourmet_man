@@ -1,5 +1,4 @@
 const num = 30;
-const num = 30;
 
 function createGourmet_man( count ){
     const imagecontents = document.getElementById('imagecontents');

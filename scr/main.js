@@ -7,8 +7,11 @@ function createGourmet_man( count ){
     let img_element = document.createElement('img');
     img_element.src = `image/${imageNum+1}.jpg`; 
     img_element.className  = ('imagecontents');
+    let border = document.createElement('p');
+    border.className  = ('border');
     imagecontents.appendChild(img_element);
-    createBorder(imageNum)
+    img_element.after(border);
+    // createBorder(imageNum)
     };
 };
 
